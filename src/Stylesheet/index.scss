@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500&family=Roboto:wght@100;300;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import './Utility.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'cart.scss';
+@import 'mediaQueries.scss';
+
+
+
+body{
+    background-color: $primaryClr;
+    color: $whiteClr;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: $primaryClr;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $secondaryDarkClr;
+    border-radius: 15px;
+}

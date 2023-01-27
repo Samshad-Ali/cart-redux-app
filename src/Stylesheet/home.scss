@@ -1,0 +1,57 @@
+
+@import 'Utility.scss';
+
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.cart-box{
+    width: 300px;
+    margin: 2rem;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $whiteClr;
+    color: $primaryClr;
+    transition:transform .4s ease;
+    >img{
+        width:240px;
+        height: 150px;
+        object-fit: contain;
+    }
+    >p{
+        margin-top: 1em;
+        font:300 1.5rem 'Roboto';
+        margin-bottom: .2em;
+    }
+   > h3{
+        font:900 1.3rem 'Roboto';
+        margin-bottom: .4em;
+    }
+    >button{
+        background-color:$secondaryClr;
+        color: $whiteClr;
+        padding: 1em;
+        font-weight: 700;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        margin-top: .5em;
+        transition: all .5s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: $secondaryDarkClr;
+        }
+    }
+    &:hover{
+        transform: scale(1.04);
+    }
+
+}

@@ -1,0 +1,101 @@
+@import './Utility.scss';
+
+
+.cart{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    >main{
+        padding: 2em;
+        overflow-y: auto;
+        >h1{
+            color: $whiteClr;
+            font:100 2rem 'Roboto';
+        }
+    }
+    >aside{
+        border-radius: 100px 0 0 100px;
+        background-color: $primaryClr;
+        color: $whiteClr;
+        height: 100%;
+        width: 100%;
+        box-shadow: -10px 0 10px rgba(0,0,0,0.182);
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        justify-content: center;
+        padding-left: 1em;
+        >h2{
+            
+            font:100 1.5rem 'Roboto';
+            letter-spacing: 2px;
+            &:last-of-type{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.cartItem{
+ background-color: $whiteClr;
+ width: 100%;
+ border-radius: 10px;
+ margin: 2em 0;
+ padding: 1em .5em ;
+ color: $primaryClr;
+ display: grid;
+ grid-template-columns: 1fr 3fr 1fr 1fr;
+ align-items: center;
+ justify-content: space-between;
+ >img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+ }
+ >article{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+        >h3{
+        font:300 1.5rem 'Roboto'
+    }
+    >p{
+        font:900 1.5rem 'Roboto';
+    }
+ }
+ >div{
+    display: flex;
+    gap: .7em;
+    justify-content: center;
+    align-items: center;
+    >p{
+        font:900 1.2rem 'Roboto';
+    }
+    >button{
+        padding: 0em .5em;
+        font:900 1.5rem 'Roboto';
+        border-radius: 5px;
+        border: none;
+        background-color: $primaryClr;
+        color: $whiteClr;
+        transition: all .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+            background-color: $primaryDarkClr;
+        }
+    }
+ }
+ .dltBtn{
+    margin-inline: auto;
+    font:900 1.8rem 'Roboto';
+    transition: all .5s;
+    color: $primaryDarkClr;
+    cursor: pointer;
+    &:hover{
+color: $secondaryDarkClr;
+    }
+ }
+}

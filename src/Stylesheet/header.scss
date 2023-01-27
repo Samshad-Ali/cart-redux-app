@@ -1,0 +1,42 @@
+
+nav{
+    background-color: $secondaryClr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    h1{
+        color:$whiteClr;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    >div{
+        flex-basis: 50%;
+        display: flex;
+        color: $primaryClr;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+        a{
+            color: $whiteClr;
+            font-size: 1.2rem;
+            transition: all .3s;
+            &:hover{
+                opacity: .9;
+                color: $primaryClr;
+            }
+            >p{
+                font:700 .8rem Roboto;
+                position: absolute;
+                background-color: $primaryClr;
+                color: $whiteClr;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                width: 16px;
+                height: 16px;
+                transform: translate(80%,-80%);
+            }
+        }
+    }
+}
